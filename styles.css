@@ -1,0 +1,41 @@
+:root {
+	/* --heading-1:  */
+	--lh-default: 1.5;
+
+	--ff-primary: 'Inter';
+	--ff-fallback: sans-serif;
+
+	--spacer-xs: 1rem;
+	--spacer-sm: 2rem;
+
+	--spacer-grid: 2rem;
+
+	--shadow-default: 0px 4px 16px rgba(17, 17, 26, 0.1), 0px 8px 32px rgba(17, 17, 26, 0.051);
+}
+.flex {
+	display: flex;
+}
+.column {
+	flex-direction: column;
+}
+/* .banner {
+	background: url('../../assets/bg-cafe.jpg') bottom left/cover;
+	height: 18.75rem;
+} */
+.headerImage {
+	width: 100%;
+}
+.header {
+	position: relative;
+}
+.headerImage::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%; /* Adjust height for desired blur area */
+	background-color: rgba(31, 25, 25, 0.66);
+	backdrop-filter: blur(2px);
+	overflow: hidden;
+}
