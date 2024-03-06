@@ -1,5 +1,4 @@
 :root {
-	/* --heading-1:  */
 	--lh-default: 1.5;
 
 	--ff-primary: 'Inter';
@@ -12,6 +11,9 @@
 
 	--shadow-default: 0px 4px 16px rgba(17, 17, 26, 0.1), 0px 8px 32px rgba(17, 17, 26, 0.051);
 }
+body {
+	width: 100%;
+}
 .flex {
 	display: flex;
 }
@@ -19,23 +21,111 @@
 	flex-direction: column;
 }
 /* .banner {
-	background: url('../../assets/bg-cafe.jpg') bottom left/cover;
+	background: url('./images/istockphoto-1475638452-1024x1024 1.png') bottom left/cover;
 	height: 18.75rem;
 } */
-.headerImage {
+.headerContainer {
 	width: 100%;
-}
-.header {
 	position: relative;
 }
-.headerImage::before {
+.headerImg {
+	width: 100%;
+	/* max-height: 300px; */
+}
+.headerDiv1::after {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 90%;
+	width: 92%;
+	max-width: 92%;
 	height: 100%; /* Adjust height for desired blur area */
 	background-color: rgba(31, 25, 25, 0.66);
 	backdrop-filter: blur(2px);
-	overflow: hidden;
+}
+.headerDiv2 {
+}
+.header {
+	position: relative;
+}
+
+.wr1img,
+.wrText {
+	flex: 1;
+	padding: 3rem;
+}
+.wrapDiv1,
+.wrapDiv2,
+.title90deg {
+	max-width: 35%;
+}
+.img {
+	height: auto;
+	width: 100%;
+}
+.wrText {
+}
+.headerDiv2,
+#title1,
+#title2,
+#title3 {
+	text-transform: uppercase;
+	background-size: cover;
+	color: transparent;
+	-webkit-background-clip: text;
+	/* font-size: 190px; */
+	font-size: clamp(3.125rem, 0.044rem + 13.1455vw, 11.875rem);
+	letter-spacing: -0.3rem;
+	font-weight: 900;
+
+	background-image: url(./images/istockphoto-1475638452-1024x1024\ 1.png);
+}
+#title1 {
+	left: 4rem;
+	position: absolute;
+	bottom: 0;
+	color: transparent;
+	z-index: 1;
+}
+#title2 {
+	margin-left: 4rem;
+}
+.subtitle {
+	color: #014774;
+	font-size: 2.3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: -0.2rem;
+}
+strong {
+	font-weight: 200 !important;
+}
+li {
+	color: #000;
+
+	font-family: Inter;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 200;
+	line-height: normal;
+	letter-spacing: -1.02px;
+}
+.left90deg {
+	transform: rotate(-90deg);
+	position: absolute;
+	font-size: 100px;
+	left: -300px;
+	bottom: 450px;
+}
+.left90deg__span {
+	font-size: 5.5rem;
+	color: #014774;
+	font-weight: 500;
+}
+.wrapper3 {
+	position: relative;
+}
+.title90deg {
+	position: relative;
+	flex: 1;
 }

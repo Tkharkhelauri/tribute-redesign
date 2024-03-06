@@ -36,8 +36,7 @@ body {
 	min-height: 100dvh;
 	line-height: var(--lh-default);
 	font-family: var(--ff-primary), var(--ff-fallback);
-	background: var();
-	font-size: 1rem;
+	font-size: 2rem;
 	margin: 0;
 }
 
@@ -69,6 +68,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
+	/* width: 100%; */
 	max-width: 100%;
 	display: block;
 }
