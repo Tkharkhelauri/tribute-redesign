@@ -13,6 +13,12 @@
 }
 body {
 	width: 100%;
+	background-color: #040000d6;
+}
+.mainContainer {
+	max-width: 85%;
+	margin: 0 auto;
+	background-color: #fff;
 }
 .flex {
 	display: flex;
@@ -48,27 +54,62 @@ body {
 .header {
 	position: relative;
 }
-
+.wrText {
+	padding-left: 0;
+}
+.wrText2 {
+	max-width: 814px;
+}
 .wr1img,
 .wrText {
 	flex: 1;
-	padding: 3rem;
+	padding: 1rem;
 }
-.wrapDiv1,
-.wrapDiv2,
-.title90deg {
+.wrText1 {
+	margin-top: 1.5rem;
+	margin-right: 3rem;
+}
+.wrText3 {
+	padding-bottom: 200px;
+}
+.wrapDiv1 {
+	max-width: 30%;
+}
+.wrapDiv2 {
 	max-width: 35%;
+}
+.title {
+}
+.title90deg {
+	max-width: 30%;
+}
+/* .title90deg {
+	transform: rotate(-90deg);
+	position: absolute;
+
+	font-size: clamp(6.25rem, 3.75rem + 6.25vw, 9.375rem);
+	left: 0;
+	bottom: 0;
+} */
+.left90deg {
+	transform: rotate(-90deg);
+	position: absolute;
+
+	font-size: clamp(6.25rem, 3.75rem + 6.25vw, 9.375rem);
+	left: -250px;
+	bottom: 450px;
+}
+.wrapper3 {
+	background-color: #f2f8fc;
+	margin-left: 30%;
 }
 .img {
 	height: auto;
 	width: 100%;
 }
-.wrText {
-}
+
 .headerDiv2,
-#title1,
-#title2,
-#title3 {
+.title {
 	text-transform: uppercase;
 	background-size: cover;
 	color: transparent;
@@ -77,55 +118,61 @@ body {
 	font-size: clamp(3.125rem, 0.044rem + 13.1455vw, 11.875rem);
 	letter-spacing: -0.3rem;
 	font-weight: 900;
-
+	/* z-index: 999; */
 	background-image: url(./images/istockphoto-1475638452-1024x1024\ 1.png);
 }
 #title1 {
-	left: 4rem;
+	left: 1.5rem;
 	position: absolute;
 	bottom: 0;
 	color: transparent;
 	z-index: 1;
 }
 #title2 {
-	margin-left: 4rem;
+	margin-left: 1.5rem;
 }
 .subtitle {
 	color: #014774;
-	font-size: 2.3rem;
-	font-weight: 300;
+	font-size: clamp(1rem, -0.2857rem + 2.6786vw, 2.5rem);
 	text-transform: uppercase;
-	letter-spacing: -0.2rem;
+	font-weight: 300;
 }
 strong {
+	/* i have to remove all this "stongs" from html and before i do so, let the weight be corrected that way for now. */
 	font-weight: 200 !important;
 }
 li {
 	color: #000;
 
 	font-family: Inter;
-	font-size: 34px;
+	font-size: clamp(1rem, -0.2857rem + 2.6786vw, 2.5rem);
 	font-style: normal;
 	font-weight: 200;
 	line-height: normal;
 	letter-spacing: -1.02px;
 }
-.left90deg {
-	transform: rotate(-90deg);
-	position: absolute;
-	font-size: 100px;
-	left: -300px;
-	bottom: 450px;
+.wrapper2 {
+	position: relative;
 }
+.designColor {
+	position: absolute;
+	/* top: 0%; */
+	width: 30%;
+	height: 100%;
+	right: 0%;
+	background-color: rgba(170, 191, 208, 0.5);
+}
+
 .left90deg__span {
-	font-size: 5.5rem;
+	font-size: clamp(3.125rem, 1.125rem + 5vw, 5.625rem);
 	color: #014774;
 	font-weight: 500;
+	/* display: block; */
+	/* line-height: 0.7; */
 }
 .wrapper3 {
 	position: relative;
 }
-.title90deg {
-	position: relative;
-	flex: 1;
-}
+
+/* .wrapper {\l[.
+	/"]]
