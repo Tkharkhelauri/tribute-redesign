@@ -1,4 +1,4 @@
-# live - https://tkharkhelauri.github.io/tribute-redesign/
+# live - https://tribute-redesign.vercel.app/
 <img width="1406" alt="Screenshot 2024-03-08 at 16 53 39" src="https://github.com/Tkharkhelauri/tribute-redesign/assets/95001028/fc95410f-86ee-49a2-9b80-5a284befe17e">
 <img width="1407" alt="Screenshot 2024-03-08 at 16 55 21" src="https://github.com/Tkharkhelauri/tribute-redesign/assets/95001028/10af2a8a-5516-4274-9898-78cbd5dade7e">
 <img width="728" alt="Screenshot 2024-03-08 at 16 56 27" src="https://github.com/Tkharkhelauri/tribute-redesign/assets/95001028/56506054-49fc-4176-aaba-ea0606b725a3">
