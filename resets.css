@@ -11,6 +11,9 @@ html {
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 }
+ul {
+	padding-inline-start: 2rem;
+}
 
 /* Remove default margin in favour of better control in authored CSS */
 h1,
