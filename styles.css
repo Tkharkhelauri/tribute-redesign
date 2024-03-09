@@ -67,18 +67,18 @@ body {
 .header {
 	position: relative;
 }
-.wrText {
+.wrapText {
 	padding-left: 0;
 }
 .wrText2 {
 	max-width: 814px;
 }
-.wr1img,
-.wrText {
+.wrapImg1,
+.wrapText {
 	flex: 1;
 	padding: 1rem;
 }
-.wrText1 {
+.wrapText1 {
 	margin-top: 1.5rem;
 	margin-right: 3rem;
 }
@@ -275,3 +275,4 @@ li {
 	text-align: end;
 	/* max-width: 600px; */
 }
+@media (mid-width: );
