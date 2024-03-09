@@ -4,6 +4,16 @@
 	--ff-primary: 'Inter';
 	--ff-fallback: sans-serif;
 
+	--col-black: #000;
+	--col-blackish: #040000db;
+	--col-dark: #1f1919a8;
+	--col-white: #fff;
+	--col-blue-light: #f2f8fc;
+	--col-blue-dark: #014774;
+	--col-gray: #aabfd0;
+
+	--opacity: 0.8;
+
 	--spacer-xs: 1rem;
 	--spacer-sm: 2rem;
 
@@ -13,12 +23,12 @@
 }
 body {
 	width: 100%;
-	background-color: #040000d6;
+	background-color: var(--col-blackish);
 }
 .mainContainer {
 	max-width: 80%;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: var(--col-white);
 }
 .flex {
 	display: flex;
@@ -49,7 +59,7 @@ body {
 	width: 92%;
 	max-width: 92%;
 	height: 100%; /* Adjust height for desired blur area */
-	background-color: rgba(31, 25, 25, 0.66);
+	background-color: var(--col-dark);
 	backdrop-filter: blur(2px);
 }
 .headerDiv2 {
@@ -103,16 +113,16 @@ body {
 	bottom: 37%;
 }
 .wrapper3 {
-	background-color: #f2f8fc;
+	background-color: var(--col-blue-light);
 	padding-left: 30%;
 	position: relative;
 	margin: 1rem;
 }
 #wr2img {
-	margin-top: 115px;
+	margin-top: 10%;
 	position: absolute;
 	right: 10%;
-	width: 50%;
+	width: 65%;
 }
 .img {
 	height: auto;
@@ -144,18 +154,18 @@ body {
 	margin-left: 1.5rem;
 }
 .subtitle {
-	color: #014774;
+	color: var(--col-blue-dark);
 	font-size: clamp(1rem, -0.2857rem + 2.6786vw, 2.5rem);
 	text-transform: uppercase;
 	font-weight: 500;
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
 }
 strong {
 	/* i have to remove all this "stongs" from html and before i do so, let the weight be corrected that way for now. */
 	font-weight: 200 !important;
 }
 li {
-	color: #000;
+	color: var(--col-black);
 
 	font-family: Inter;
 	font-size: clamp(1rem, -0.2857rem + 2.6786vw, 2.5rem);
@@ -167,10 +177,10 @@ li {
 .wrapper2 {
 	position: relative;
 	margin-bottom: 50px;
-	height: 900px;
+	height: 1000px;
 }
 .wrText2 {
-	margin-top: 150px;
+	margin-top: 15%;
 	margin-left: 30px;
 }
 .designColor {
@@ -181,7 +191,7 @@ li {
 
 	/* max-height:  */
 	right: 0%;
-	background-color: rgba(170, 191, 208, 0.5);
+	background-color: #aabfd080;
 	/* padding-block: 200px; */
 }
 
@@ -195,7 +205,7 @@ li {
 .blueDiv {
 	padding-top: 5%;
 	flex-direction: row-reverse;
-	background-color: #aabfd0;
+	background-color: var(--col-gray);
 	margin-block: 75px;
 }
 .blueDiv li {
@@ -204,7 +214,7 @@ li {
 	font-size: clamp(0.875rem, 0.315rem + 1.4vw, 1.75rem);
 }
 .blueDiv strong {
-	color: #014774;
+	color: var(--col-blue-dark);
 }
 .wrapper4 ul,
 .wrapper5 ul {
@@ -222,7 +232,7 @@ li {
 	margin: 0 auto; /* Center the line horizontally within its container */
 }
 .wrTextBg {
-	background-color: #f2f8fc;
+	background-color: var(--col-blue-light);
 	width: 75%;
 	padding: 5%;
 }
@@ -248,12 +258,20 @@ li {
 .wrText8 {
 	width: 75%;
 	right: 0;
-	background-color: #f2f8fc;
+	background-color: rgba(var(--col-blue-light), var(--opacity));
+	padding-left: 3rem;
+	padding-top: 2rem;
 }
 .spacer {
 	width: 25%;
 }
+.footerSpacer {
+	width: 40%;
+}
+.footer {
+	/* width: 75%; */
+}
 #footer {
 	text-align: end;
-	max-width: 600px;
+	/* max-width: 600px; */
 }
